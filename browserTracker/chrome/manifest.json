@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "BrowserTracker",
+    "description": "This extension records and displays statistics about browsing history.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "cloud-computing.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "jquery-3.3.1.min.js",
+            "config.js",
+            "tracking.js"
+        ],
+    "persistent": false
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "idle",
+        "alarms"
+    ]
+}

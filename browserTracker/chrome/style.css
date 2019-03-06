@@ -1,0 +1,99 @@
+body
+{
+	line-height: 1.6em;
+}
+
+#stats
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#stats th
+{
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #99cfe4;
+	border-top: 4px solid #96c8db;
+	border-bottom: 1px solid #fff;
+	color: #382b68;
+}
+#stats tbody tr {
+  background-attachment:fixed;
+}
+#stats tr
+{
+	background: #cbeef1; 
+	border-bottom: 1px solid #fff;
+	color: #6e60a8;
+	border-top: 1px solid transparent;
+}
+#stats td
+{
+	padding: 8px;
+}
+#stats tr:hover td
+{
+	background: #a4d5db;
+	color: #300399;
+}
+#stats img
+{
+  padding-right: 6px;
+}
+#stats a:link,
+#stats a:visited
+{
+  text-decoration: none;
+  color: black;
+}
+#stats a:hover
+{
+  color: #ff006a;
+}
+
+input[type=radio] {
+  display:none;
+}
+
+input[type=radio] + label {
+  display:inline-block;
+  margin:-2px;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(45, 79, 99);
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(226, 242, 253, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #c4e6f5;
+  background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+  background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+  background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #ccc;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  border-bottom-color: #b3b3b3;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+
+input[type=radio]:checked + label {
+     background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(20, 40, 49, 0.199),0 1px 2px rgba(0,0,0,0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(20, 40, 49, 0.199),0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: inset 0 2px 4px rgba(20, 40, 49, 0.199),0 1px 2px rgba(0,0,0,0.05);
+    background-color:#bde2f7;
+}
