@@ -1,0 +1,5 @@
+take key
+inventory
+go next
+take ladder
+use key

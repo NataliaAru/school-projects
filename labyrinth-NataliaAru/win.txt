@@ -1,0 +1,14 @@
+take key
+go next
+take sword
+take ladder
+use sword
+use key
+go next
+use ladder
+go next
+take treasure 
+take cake
+go next
+use cake
+go next

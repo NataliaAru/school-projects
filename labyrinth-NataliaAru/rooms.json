@@ -1,0 +1,44 @@
+[
+{
+"name":"Cave entrance",
+"description":"You entered a small cave. the from outside helps you see a couple rats fighting over the cheese. There is a small wooden door that leads inside.",
+"trap" : "NONE",
+"trapkey" : "",
+"items":["key"]
+},
+{
+"name":"Inside the Cave",
+"description":"You are now in deep part of the cave. It is hard to see so you use your phone as flashlight. And you see a golden door to Chamber",
+"trap" : "The door is locked!",
+"trapkey" : "key",
+"items":[ "sword", "ladder"]
+},
+{
+"name":"Dragon Chamber",
+"description":"You are in a large room filled with bones. It looks like a nest so you try to leave fast",
+"trap" : "The stairs are broken, and you cant climb up the wall",
+"trapkey" : "ladder",
+"items":[]
+},
+{
+"name":"Treasury",
+"description":"You climbed up to second floor and end up in a small room. With a story drawn on th walls.",
+"trap" : "NONE",
+"trapkey" : "",
+"items":[ "treasure", "cake"]
+},
+{
+"name":"Hall With a Friendly Monster",
+"description":"You are close to the end, you enter a long hall with a small, fluffy dragon",
+"trap" : "Monster may be fluffy but if you dont feed it, it will eat you for dessert",
+"trapkey" : "cake",
+"items":[]
+},
+{
+"name":"Cave Exit",
+"description":"Yay, you made it to the end, you can leave the cave now!",
+"trap" : "NONE",
+"trapkey" : "",
+"items":[]
+}
+]
