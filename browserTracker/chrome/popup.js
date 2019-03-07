@@ -1,8 +1,9 @@
 (function () {
   //how many sites displayed and how many days to consider
-  var numberOfViews = 10;
+  var numberOfViews = 5;
   var days = 1;
   var server = "http://localhost:8080";
+
  //takes in string json object and boolean - to clear or not
   display = function (data, clearVal) {
     var json = JSON.parse(data);
@@ -15,27 +16,18 @@
     if (!clearVal) {
       for (var key in json) {
         var item = json[key];
-        row = addRow(item["icon"], item["URL"], item["totalTime"], item["pageVisits"]);
+        row = addRow(item["URL"], item["totalTime"], item["pageVisits"]);
         tbody.appendChild(row);
       }
     }
   }
   // take in image, and url, time and visits as string, returns a row object
-  addRow = function (image, url, time, visits) {
+  addRow = function (url, time, visits) {
     var row = document.createElement("tr");
-    row.appendChild(imageCell(image));
     row.appendChild(urlCell(url));
     row.appendChild(getCell(time));
     row.appendChild(getCell(visits));
     return row;
-  }
-  //return Cell with image
-  imageCell = function (image) {
-    cell = document.createElement("td");
-    image.height = 10;
-    image.weight = 10;
-    cell.appendChild(image);
-    return cell;
   }
   //returns cell with url, url opens in new tab
   urlCell = function (url) {
@@ -84,14 +76,12 @@
     var xhr = new XMLHttpRequest();
     xhr.open("POST", server + "/reset");
     xhr.onload = function () {
-      display(xhr.response, true);
+      display(null, true);
     }
     xhr.send();
   }
   //set up buttons and initial view
   document.addEventListener('DOMContentLoaded', function () {
-    // --- Send request example: ---
-    var server = "http://localhost:8080";
     var resetButton = document.getElementById('reset');
     resetButton.onclick = function () {
       clear();
@@ -104,6 +94,9 @@
         getWebsites();
       }
     };
-    display(null, false);
+
+    var change = document.getElementById('change');
+    change.onclick = doSubmit;
+    doSubmit();
   }, false);
 })();
